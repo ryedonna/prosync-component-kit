@@ -6,6 +6,14 @@
   "main": "dist/prosync-components.cjs.js",
   "module": "dist/prosync-components.es.js",
   "typings": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/prosync-components.es.js",
+      "require": "./dist/prosync-components.cjs.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
   "files": [
     "dist"
   ],
